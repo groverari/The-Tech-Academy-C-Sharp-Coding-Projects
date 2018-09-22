@@ -1,0 +1,25 @@
+﻿<div class="row">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="text-primary">Customer Information</h3>
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("AddCustomer", "Home", FormMethod.Post))
+            {
+
+            <div class="row">
+                <div class="form-group col">
+                    <input name="CustomerName" type="text" placeholder="CustomerName" />
+                </div>
+                <div class="form-group col">
+                    <input name="Item" type="text" placeholder="Item Purchased" />
+                </div>
+                <div class="form-group col">
+                    <input name="EmployeeName" type="text" placeholder="Your Name" />
+                </div>
+                <button type="submit"class="btn btn-block btn-primary col-3">Enter</button>
+            </div>
+            }
+        </div>
+    </div>
+</div>

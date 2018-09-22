@@ -1,0 +1,27 @@
+﻿@using Business.Models;
+
+@model List<Customer>
+    <div class="row">
+        <div class="card">
+            <div class="card-header">
+                <h3>Current Customers</h3>
+            </div>
+            <div class="card-body">
+                @foreach (var customer in Model)
+                {
+                    <div class="row">
+                        <div class="col">
+                            @customer.Name
+                        </div>
+                        <div class="col">
+                            @customer.ItemPurchased
+                        </div>
+                        <div class="col">
+                            @customer.EmployeeName
+                        </div>
+
+                    </div>
+                }
+                </div>
+        </div>
+    </div>
